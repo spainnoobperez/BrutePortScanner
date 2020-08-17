@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 80, 60, 407, 261
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "BrutePortScanner"
+FONT 9, "Segoe UI", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDIP_STARTIP,"SysIPAddress32",WS_TABSTOP,33,18,73,14
+    CONTROL         "",IDIP_ENDIP,"SysIPAddress32",WS_TABSTOP,33,37,73,14
+    CHECKBOX        "Range:",IDC_USERANGE,121,19,35,12
+    EDITTEXT        IDE_STARTPORT,157,18,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_ENDPORT,202,18,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CHECKBOX        "List:",IDC_USELIST,121,39,35,12
+    EDITTEXT        IDE_PORTLIST,157,37,73,14,ES_AUTOHSCROLL
+    EDITTEXT        IDE_THREAD,282,18,35,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDE_TIMEOUT,282,37,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDL_RESULT,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,9,76,382,163
+    GROUPBOX        "Address",IDC_STATIC,4,6,107,51
+    LTEXT           "Start:",IDC_STATIC,9,21,24,9
+    LTEXT           "End:",IDC_STATIC,9,39,24,9
+    GROUPBOX        "Port",IDC_STATIC,116,6,120,51
+    LTEXT           "->",IDC_STATIC,189,21,8,9
+    GROUPBOX        "Parameter",IDC_STATIC,242,6,82,51
+    LTEXT           "Threads:",IDC_STATIC,248,21,31,9
+    LTEXT           "Timeout:",IDC_STATIC,248,39,34,9
+    GROUPBOX        "Command",IDG_COMMAND,330,6,62,51
+    CONTROL         "",IDC_SCAN,"Button",BS_OWNERDRAW | WS_TABSTOP,337,17,44,14
+    CONTROL         "",IDC_STOP,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,337,36,44,14
+    GROUPBOX        "Result",IDG_RESULT,18,64,383,180
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "Resource\\ICON.ICO"
+
+IDI_21                  ICON                    "Resource\\21.ICO"
+
+IDI_23                  ICON                    "Resource\\23.ICO"
+
+IDI_25                  ICON                    "Resource\\25.ICO"
+
+IDI_80                  ICON                    "Resource\\80.ICO"
+
+IDI_110                 ICON                    "Resource\\110.ICO"
+
+IDI_79                  ICON                    "Resource\\79.ICO"
+
+IDI_1080                ICON                    "Resource\\1080.ICO"
+
+IDI_3389                ICON                    "Resource\\3389.ICO"
+
+IDI_1433                ICON                    "Resource\\1433.ICO"
+
+IDI_139                 ICON                    "Resource\\139.ICO"
+
+IDI_135                 ICON                    "Resource\\135.ICO"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MENU MENU
+BEGIN
+    POPUP "Popup Menu"
+    BEGIN
+        MENUITEM "Copy\tCtrl+C",                IDC_COPY
+        MENUITEM "Cut\tCtrl+X",                 IDC_CUT
+        MENUITEM "Delete\tCtrl+Del",            IDC_DEL
+        MENUITEM "Select All\tCtrl+A",          IDC_SELECTALL
+        MENUITEM "Revert Choice\tCtrl+I",       IDC_SELECTINVERSE
+        MENUITEM SEPARATOR
+        POPUP "Sort"
+        BEGIN
+            MENUITEM "Sort by IP address",          IDC_SORTIP
+            MENUITEM "Sort by port",                IDC_SORTPORT
+            MENUITEM "Sort by ID",                  IDC_SORTBANNER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Save Result",                 IDC_SAVE
+        MENUITEM "Import Result",               IDC_LOAD
+        MENUITEM "Resolve Domain",              IDC_RESOLVEDOMAIN
+        MENUITEM "Remote Login",                IDC_TELNET
+        MENUITEM SEPARATOR
+        MENUITEM "Get Port ID",                 IDC_GETBANNER, CHECKED
+        MENUITEM "Reserve History Record",      IDC_KEEPHISTORY, CHECKED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECK               BITMAP                  "Resource\\Check.bmp"
+
+IDB_UNCHECK             BITMAP                  "Resource\\UnCheck.bmp"
+
+IDB_UP                  BITMAP                  "Resource\\UP.bmp"
+
+IDB_DOWN                BITMAP                  "Resource\\DOWN.bmp"
+
+IDB_GRAY                BITMAP                  "Resource\\GRAY.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_HAND         CURSOR                  "Resource\\Hand.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 401
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

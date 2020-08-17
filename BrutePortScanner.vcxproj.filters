@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{da8f13ca-6f2b-4ff7-803c-f9d9f048bc66}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7a36aeb6-87e4-42b5-b6b0-a4fe85df3205}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7ba1ada5-89d0-4047-b15d-bc3c5fdf50dc}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BrutePortScanner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\1080.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\110.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\135.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\139.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\1433.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\21.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\23.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\25.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\3389.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\79.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\80.ICO">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\Icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\Check.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\UnCheck.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\UP.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\DOWN.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resource\GRAY.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource\Hand.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
